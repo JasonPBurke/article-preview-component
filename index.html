@@ -12,37 +12,57 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
 
     <title>Frontend Mentor | Article preview component</title>
   </head>
-  <body id="test">
+  <body id="test" class="manrope-500">
     <main>
       <div class="card">
-        <img src="./images/drawers.jpg" alt="Drawers" id="drawers" />
+        <div class="image-container">
+          <img src="./images/drawers.jpg" alt="Drawers" id="drawers" />
+        </div>
         <div class="card-content">
-          <h1>Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home</h1>
-          <p>Ever been in a room and felt like something was
-            missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-            tips to help you make any room feel complete.
+          <h1 class="manrope-700">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
           </p>
           <div class="author">
-            <img src="./images/avatar-michelle.jpg" alt="Michelle" />
-            <div class="author-info">
-              <p>Michelle Appleton</p>
-              <p>28 Jun 2020</p>
+            <div class="author-container">
+              <img src="./images/avatar-michelle.jpg" alt="Michelle" />
+              <div class="author-info">
+                <p class="manrope-700">Michelle Appleton</p>
+                <p>28 Jun 2020</p>
+              </div>
             </div>
             <div class="share-button">
               <img src="./images/icon-share.svg" alt="Share" />
             </div>
-            <div  class="share-popup">
-              <h2>Share</h2>
-              <div class="social-media">
-                <img src="./images/icon-facebook.svg" alt="Facebook"/>
-                <img src="./images/icon-twitter.svg" alt="Twitter" />
-                <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+          </div>
+        </div>
+        <div class="share-popup">
+          <h2>Share</h2>
+          <div class="social-media">
+            <div class="social-media-img-container">
+              <img src="./images/icon-facebook.svg" alt="Facebook" />
+              <img src="./images/icon-twitter.svg" alt="Twitter" />
+              <img src="./images/icon-pinterest.svg" alt="Pinterest" />
             </div>
+            <div class="share-button">
+              <img src="./images/icon-share.svg" alt="Share" />
+            </div>
+          </div>
         </div>
       </div>
     </main>
